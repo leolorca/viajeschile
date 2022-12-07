@@ -1,12 +1,65 @@
-body {background: black !important;}
+body {
+    background: black !important;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 .carousel-item {
     height: 55vh;
-  }
-  
-  .carousel-item img {
+}
+
+.carousel-item img {
     object-fit: cover;
     object-position: top;
     height: 55vh;
     overflow: hidden;
-  }
-  .barra-info {background-color: orangered; color: #fff; font-size: 2rem; text-align: center;}
+}
+
+.barra-info {
+    background-color: orangered;
+    color: #fff;
+    font-size: 2rem;
+    text-align: center;
+}
+footer {background-color: orangered;}
+.card {
+    transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+    min-height: 450px;
+    ;
+}
+
+
+.card-has-bg {
+    background-size: 400%;
+    background-repeat: no-repeat no-repeat;
+    background-position: center center;
+
+}
+
+.card-has-bg:hover {
+    transform: scale(0.98);
+    box-shadow: 0 0 5px -2px rgba(0, 0, 0, 0.3);
+    background-size: 500%;
+    transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+
+
+}
+
+.card-img-overlay {
+    background: linear-gradient(0deg, rgba(4, 69, 114, 0.5) 0%, rgba(71, 19, 19, 0.8) 100%);
+}
+
+.titulos::after {
+    content: "";
+    height: 2px;
+    width: 30%;
+    position: relative;
+    background: #fff;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+}
+#contacto {background-image: url(../img/carousel1.jpg); background-position: center;}
+section{margin-top: 120px;}

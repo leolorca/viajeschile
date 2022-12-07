@@ -51,7 +51,7 @@
     </nav>
 
 
-    <header>
+    <header id="inicio">
         <div id="carouselchile" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -77,7 +77,9 @@
     </header>
     <section id="quienessomos">
         <div class="container">
-            <div class="my-5 pb-3 fs-2 text-light text-center"><h2>¿Quienes Somos?</h2></div>
+            <div class="my-5 pb-3 fs-2 text-light text-center titulos">
+                <h2>¿Quienes Somos?</h2>
+            </div>
             <div class="row gy-4">
                 <div class="col-md-4 fs-6 text-light">
                     <div class="barra-info mb-5"><i class="fa-solid fa-hotel"></i></div>
@@ -111,24 +113,124 @@
                         vehicula dignissim mi. Suspendisse facilisis scelerisque lectus. Sed egestas venenatis nibh, id
                         tempus ligula. Etiam condimentum mi molestie massa pellentesque, efficitur fermentum dolor
                         vehicula. Curabitur tincidunt fringilla velit a faucibus.</p>
-               </div>
+                </div>
             </div>
         </div>
     </section>
 
-<section id="destacado">
-<div class="container">
-    <div class="my-5 pb-3 fs-2 text-light text-center"><h2>Destacados</h2</div>
+    <section id="destacado">
+        <div class="container">
+            <div class="my-5 pb-3 fs-2 text-light text-center titulos">
+                <h2>Destacados</h2></div>
 
+                    <div class="row gy-5">
+                        <div class="col-md-3">
+                            <div class="card text-white card-has-bg border-0"
+                                style="background-image:url('assets/img/card1.jpg');">
+                                <div class="card-img-overlay">
+                                    <div class="card-body d-flex flex-column justify-content-around h-100">
+                                        <h5 class="card-title fs-3 mb-3">¿Qué visitar?</h5>
+                                        <p class="card-text fs-5 fw-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            Phasellus sit amet augue nec elit
+                                            ornare molestie at at turpis.</p>
+                                        <p class="card-text fs-6 fw-bold">3 minutos de lectura</p>
+                                    </div>
 
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card text-white card-has-bg border-0"
+                                style="background-image:url('assets/img/card2.jpg');">
+                                <div class="card-img-overlay">
+                                    <div class="card-body d-flex flex-column justify-content-around h-100">
+                                        <h5 class="card-title fs-3 mb-3">¿Dónde comer?</h5>
+                                        <p class="card-text fs-5 fw-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            Phasellus sit amet augue nec elit
+                                            ornare molestie at at turpis.</p>
+                                        <p class="card-text fs-6 fw-bold">4 minutos de lectura</p>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card text-white card-has-bg border-0"
+                                style="background-image:url('assets/img/card3.jpg');">
+                                <div class="card-img-overlay">
+                                    <div class="card-body d-flex flex-column justify-content-around h-100">
+                                        <h5 class="card-title fs-3 mb-3">¿Dónde alojarse?</h5>
+                                        <p class="card-text fs-5 fw-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            Phasellus sit amet augue nec elit
+                                            ornare molestie at at turpis.</p>
+                                        <p class="card-text fs-6 fw-bold">5 minutos de lectura</p>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card text-white card-has-bg border-0"
+                                style="background-image:url('assets/img/card4.jpg');">
+                                <div class="card-img-overlay">
+                                    <div class="card-body d-flex flex-column justify-content-around h-100">
+                                        <h5 class="card-title fs-3 mb-3">¿Viajando solo?</h5>
+                                        <p class="card-text fs-5 fw-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            Phasellus sit amet augue nec elit
+                                            ornare molestie at at turpis.</p>
+                                        <p class="card-text fs-6 fw-bold">9 minutos de lectura</p>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+            </div>
+    </section>
+
+    <section id="contacto" class="py-5">
+<div class="container py-5">
+    <div class="my-5 pb-3 fs-2 text-light text-center titulos">
+        <h2>Contacto</h2></div>
+    <form class="w-50 m-auto my-5">
+        <p class="text-light fs-5 text-center mb-5">Vestibulum vehicula vulputate velit at dictum. Sed tortor ligula, tempus ut euismod vel,
+            vehicula dignissim mi.</p>
+
+        <div class="mb-3">
+          <input type="text" class="form-control" placeholder="Nombre">
+        </div>
+        <div class="mb-3">
+          <input type="email" class="form-control"  placeholder="Correo electrónico">
+        </div>
+        <div class="mb-3">
+            <textarea type="area" class="form-control" placeholder="Mensaje"></textarea>
+          </div>
+        <button type="submit" class="btn btn-light px-5 fw-semibold">Enviar</button>
+      </form>
 
 
 </div>
+    </section>
+<footer class="py-5">
+    <div class="container text-light d-flex justify-content-between">
+
+        <div class="fs-2"><img src="assets/img/viajes.svg" alt="logo" style="width:40px"> Viajes chile</div>
+        <div class="social fs-3 d-flex gap-3 align-self-center">
+            <i class="fa-brands fa-square-twitter"></i>
+            <i class="fa-brands fa-square-facebook"></i>
+            <i class="fa-brands fa-square-instagram"></i>
+            <i class="fa-brands fa-square-youtube"></i>
+        </div>
+
+    </div>
 
 
-</section>
 
-
+</footer>
 </body>
 
 </html>
