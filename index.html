@@ -16,11 +16,17 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
         integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-</head>
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;700&display=swap" rel="stylesheet">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="assets/js/script.js"></script>
+
+
+    </head>
 
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top ">
         <div class="container">
             <a class="navbar-brand" href="#">
                 <img src="assets/img/viajes.svg" alt="logo" style="width:40px"> Viajes Chile
@@ -75,14 +81,15 @@
         </div>
 
     </header>
-    <section id="quienessomos">
+    <section id="quienessomos" data-aos="fade-up">
         <div class="container">
             <div class="my-5 pb-3 fs-2 text-light text-center titulos">
                 <h2>¿Quienes Somos?</h2>
             </div>
             <div class="row gy-4">
-                <div class="col-md-4 fs-6 text-light">
-                    <div class="barra-info mb-5"><i class="fa-solid fa-hotel"></i></div>
+                <div class="col-md-4 fs-6 text-light" data-aos="fade-up">
+                    <div class="barra-info mb-5" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Los mejores hoteles" data-bs-custom-class="color-tooltip"><i class="fa-solid fa-hotel"></i></div>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sit amet augue nec elit ornare
                         molestie at at turpis. Praesent ut arcu porttitor, lacinia diam eu, viverra ante. Suspendisse
                         facilisis lorem sed metus pharetra posuere. Nulla congue dignissim elit, non dapibus ex
@@ -92,7 +99,9 @@
                         tempus ligula. Etiam condimentum mi molestie massa pellentesque, efficitur fermentum dolor
                         vehicula. Curabitur tincidunt fringilla velit a faucibus.</p>
                 </div>
-                <div class="col-md-4 fs-6 text-light">
+                <div class="col-md-4 fs-6 text-light" data-aos="fade-up">
+                    <div class="barra-info mb-5 d-sm-none d-block" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Descubre noches increíbles" data-bs-custom-class="color-tooltip"><i class="fa-solid fa-bed"></i></div>
                     <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sit amet augue nec elit
                         ornare molestie at at turpis. Praesent ut arcu porttitor, lacinia diam eu, viverra ante.
                         Suspendisse facilisis lorem sed metus pharetra posuere. Nulla congue dignissim elit, non dapibus
@@ -101,10 +110,12 @@
                         vehicula dignissim mi. Suspendisse facilisis scelerisque lectus. Sed egestas venenatis nibh, id
                         tempus ligula. Etiam condimentum mi molestie massa pellentesque, efficitur fermentum dolor
                         vehicula. Curabitur tincidunt fringilla velit a faucibus.</p>
-                    <div class="barra-info mt-5"><i class="fa-solid fa-bed"></i></div>
+                    <div class="barra-info mt-5 d-none d-sm-block" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                    title="Descubre noches increíbles" data-bs-custom-class="color-tooltip"><i class="fa-solid fa-bed"></i></div>
                 </div>
-                <div class="col-md-4 fs-6 text-light">
-                    <div class="barra-info mb-5"><i class="fa-solid fa-dice"></i></div>
+                <div class="col-md-4 fs-6 text-light" data-aos="fade-up">
+                    <div class="barra-info mb-5"  data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Cada día, diversión 24/7" data-bs-custom-class="color-tooltip"><i class="fa-solid fa-dice"></i></div>
                     <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sit amet augue nec elit
                         ornare molestie at at turpis. Praesent ut arcu porttitor, lacinia diam eu, viverra ante.
                         Suspendisse facilisis lorem sed metus pharetra posuere. Nulla congue dignissim elit, non dapibus
@@ -118,13 +129,13 @@
         </div>
     </section>
 
-    <section id="destacado">
+    <section id="destacado" data-aos="fade-up">
         <div class="container">
             <div class="my-5 pb-3 fs-2 text-light text-center titulos">
                 <h2>Destacados</h2></div>
 
                     <div class="row gy-5">
-                        <div class="col-md-3">
+                        <div class="col-md-3" data-aos="fade-up">
                             <div class="card text-white card-has-bg border-0"
                                 style="background-image:url('assets/img/card1.jpg');">
                                 <div class="card-img-overlay">
@@ -140,7 +151,7 @@
                             </div>
 
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-3" data-aos="fade-up">
                             <div class="card text-white card-has-bg border-0"
                                 style="background-image:url('assets/img/card2.jpg');">
                                 <div class="card-img-overlay">
@@ -156,7 +167,7 @@
                             </div>
 
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-3" data-aos="fade-up">
                             <div class="card text-white card-has-bg border-0"
                                 style="background-image:url('assets/img/card3.jpg');">
                                 <div class="card-img-overlay">
@@ -172,7 +183,7 @@
                             </div>
 
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-3" data-aos="fade-up">
                             <div class="card text-white card-has-bg border-0"
                                 style="background-image:url('assets/img/card4.jpg');">
                                 <div class="card-img-overlay">
@@ -192,11 +203,11 @@
             </div>
     </section>
 
-    <section id="contacto" class="py-5">
+    <section id="contacto" class="py-5" data-aos="fade-up">
 <div class="container py-5">
     <div class="my-5 pb-3 fs-2 text-light text-center titulos">
         <h2>Contacto</h2></div>
-    <form class="w-50 m-auto my-5">
+    <form class="m-auto my-5">
         <p class="text-light fs-5 text-center mb-5">Vestibulum vehicula vulputate velit at dictum. Sed tortor ligula, tempus ut euismod vel,
             vehicula dignissim mi.</p>
 
@@ -215,10 +226,9 @@
 
 </div>
     </section>
-<footer class="py-5">
-    <div class="container text-light d-flex justify-content-between">
-
-        <div class="fs-2"><img src="assets/img/viajes.svg" alt="logo" style="width:40px"> Viajes chile</div>
+<footer class="py-5" data-aos="fade-up">
+    <div class="container text-light d-flex justify-content-between flex-column flex-md-row gy-5">
+        <div class="fs-2 text-center mb-4 mb-md-0"><img src="assets/img/viajes.svg" alt="logo" style="width:40px"> Viajes chile</div>
         <div class="social fs-3 d-flex gap-3 align-self-center">
             <i class="fa-brands fa-square-twitter"></i>
             <i class="fa-brands fa-square-facebook"></i>
@@ -229,7 +239,9 @@
     </div>
 
 
-
+    <script>
+        AOS.init();
+      </script>
 </footer>
 </body>
 

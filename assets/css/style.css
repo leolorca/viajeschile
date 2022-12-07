@@ -1,11 +1,13 @@
 body {
     background: black !important;
+    font-family: 'Inter', sans-serif;
 }
 
 html {
     scroll-behavior: smooth;
 }
 
+/* componentes bootsrap 5.2 */
 .carousel-item {
     height: 55vh;
 }
@@ -17,13 +19,7 @@ html {
     overflow: hidden;
 }
 
-.barra-info {
-    background-color: orangered;
-    color: #fff;
-    font-size: 2rem;
-    text-align: center;
-}
-footer {background-color: orangered;}
+
 .card {
     transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
     min-height: 450px;
@@ -50,6 +46,11 @@ footer {background-color: orangered;}
 .card-img-overlay {
     background: linear-gradient(0deg, rgba(4, 69, 114, 0.5) 0%, rgba(71, 19, 19, 0.8) 100%);
 }
+.color-tooltip {
+    --bs-tooltip-bg: #fff !important;
+    --bs-tooltip-color: orangered !important;
+  }
+/* custom */
 
 .titulos::after {
     content: "";
@@ -63,3 +64,17 @@ footer {background-color: orangered;}
 }
 #contacto {background-image: url(../img/carousel1.jpg); background-position: center;}
 section{margin-top: 120px;}
+
+.barra-info {
+    background-color: orangered;
+    color: #fff;
+    font-size: 2rem;
+    text-align: center;
+}
+footer {background-color: orangered;}
+form {max-width: 50%;}
+
+@media screen and (max-width:576px) {
+    form {max-width: 90%;}
+
+}
