@@ -9,3 +9,4 @@ body {background: black !important;}
     height: 55vh;
     overflow: hidden;
   }
+  .barra-info {background-color: orangered; color: #fff; font-size: 2rem; text-align: center;}
