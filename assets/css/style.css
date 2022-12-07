@@ -1,0 +1,11 @@
+body {background: black !important;}
+.carousel-item {
+    height: 55vh;
+  }
+  
+  .carousel-item img {
+    object-fit: cover;
+    object-position: top;
+    height: 55vh;
+    overflow: hidden;
+  }
